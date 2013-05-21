@@ -1,0 +1,12 @@
+/* 
+IE specific styls
+
+*/
+
+.new span.overlay { 
+		display: none; 	
+} 
+.new a:hover span.overlay { 
+	display: block;  
+} 
+

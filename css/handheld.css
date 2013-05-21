@@ -1,0 +1,137 @@
+/* handheld.css 
+Colors: 
+Background: #4E4F48
+Highlight:  #C2CF52
+*/
+body { 
+	background-color: #fff; 
+} 
+#container { 
+	width: 100%; 
+	margin: 0 auto; 
+	background-color: #fff; 
+	padding: 0; 
+} 
+
+header { 
+	height: 300px; 
+	width: 95%; 
+	margin: 0 auto; 
+	background-position: 0px 10px;  
+	border: none; 
+} 
+
+header form { 
+	float: none; 
+	clear: right;  
+	margin: 30px 20px 20px 5px;  
+} 
+
+header .account { 
+	display: none; 
+}
+header .account a[href^="support"] { display: none; }
+header .account a[href^="account"] {  }  
+header .account a[href^="cart"] { 
+	position: relative; 
+} 
+header .account a[href^="cart"] img{ 
+	margin: 0; 
+} 
+
+body#workout header, body#category header { height: 120px; } 
+body#workout nav, body#category nav { display: none; height: 0; } 
+body#workout nav ul li a, body#category nav ul li a { display: none; height: 0; } 
+nav { 
+	height: 200px; 
+	margin: 0; 
+	float: none; 
+} 
+
+nav ul li { 
+	float: none; 
+} 
+nav ul li a { 
+	display: block; 
+	float: none; 
+	width: 95%; 
+	height: 35px; 
+	padding: 0 0 0 10px; 
+	margin: 2px auto;  
+	font-size: 1.2em; 
+	font-weight: bold; 
+	text-align: left; 
+	-moz-border-radius: 0px; 
+	-webkit-border-radius: 0px; 
+	-o-border-radius: 0px; 
+	border-radius: 0px; 
+	background: #4E4F48 url(../images/play.png) no-repeat 95% 6px; 
+} 
+#feature { display: none;  } 
+
+.new { float: none; } 
+#sidebar { display: none; } 
+#ad { display: none; } 
+#newsletter { display: none; } 
+header p { display: none; } 
+
+footer { 
+	margin: 1em 0 1em .5em; 
+	overflow: auto; 
+	height: 6em; 
+	font-size: 85%; 
+} 
+
+footer ul { 
+ 	float: none; 
+} 
+.copyright { 
+	margin: 3em 1em 1em 1em; 
+	text-align: left; 
+	clear: both; 
+} 
+
+/* Category Page */
+#listing { 
+	width: 95%; 
+	margin: 0 auto; 
+  border-top: 1px solid #4E4F48; 
+} 
+#listing ul li{
+	width: 100%;  
+  border-bottom: 1px solid #4E4F48; 
+	float: left; 
+	margin: 0; 
+	padding: 0; 
+}
+#listing ul li a { 
+	margin: 5px; 
+	width: 100%; 
+} 
+
+/* Individual Item page */
+#player { width: 391px; margin: 0 auto;  } 
+#player_nav li a { 
+	width: 73px;
+}
+#video iframe { width: 95%; margin: 0 auto; } 
+#reviews { 
+	width: 90%; 
+	margin: auto;
+	padding: 15px; 
+} 
+#video { 
+	width: 100%; 
+	margin: auto;
+	padding: 8px; 
+} 
+#price { 
+	float: right; 
+	margin: -20px 20px 0 0;  	
+	font-weight: bold; 
+} 
+#add { 
+	clear: both; 
+	float: right; 
+	margin: -45px 15px 18px 0; 
+}
