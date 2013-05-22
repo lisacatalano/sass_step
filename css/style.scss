@@ -1,9 +1,3 @@
-/*
-Colors:
-Background: #4E4F48
-Highlight:  #C2CF52
-*/
-
 /* CSS Reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, em, img, small, strong, sub, sup, var,
@@ -31,8 +25,14 @@ input, select { vertical-align:middle; }
 /* END RESET CSS */
 
 
+/* VARIABLES */
+$base:    #4E4F48;
+$accent:  #C2CF52;
+$basefont: "Trebuchet MS", san-serif; 
+
+
 /* BASE STYLES */
-body, select, input, textarea { color:#4E4F48; }
+body, select, input, textarea { color:$base; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
 html { -webkit-font-smoothing: antialiased; }
 
@@ -55,9 +55,12 @@ button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 /* videofitness styles */
+
+
+
 body {
-  background-color: #4E4F48;
-  font-family: "Trebuchet MS", san-serif;
+  background-color: $base;
+  font-family: $basefont;
   font-size: 80%;
 }
 #container {
@@ -73,7 +76,7 @@ body {
 header {
   height: 125px;
   background: transparent url(../images/logo.png) no-repeat 0 18px;
-  border-bottom: 2px solid #C2CF52;
+  border-bottom: 2px solid $accent;
   position: relative;
   margin-bottom: 25px;
 }
@@ -98,7 +101,7 @@ header input {
   position: relative;
   height: 16px;
   width: 150px;
-  border: 2px solid #4E4F48;
+  border: 2px solid $base;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
@@ -126,7 +129,7 @@ header .account {
 header .account a {
   display: block;
   font-size: .9em;
-  color: #4E4F48;
+  color: $base;
   padding-top: 0px;
 }
 header .account a:hover { text-decoration: underline; }
@@ -158,7 +161,7 @@ nav ul li a {
   position: relative;
   width: 112px;
   float: left;
-  background-color: #4E4F48;
+  background-color: $base;
   margin-right: 5px;
   text-align: center;
   color: white;
@@ -173,7 +176,7 @@ nav ul li a {
   transition: background-color .3s ease-in;
 }
 nav ul li a:hover {
-  background-color: #C2CF52;
+  background-color: $accent;
 }
 
 nav ul.account {
@@ -197,7 +200,7 @@ header p {
   bottom: -35px;
   height: 35px;
   width: 185px;
-  background-color: #4E4F48;
+  background-color: $base;
   background-color: rgba(78,79,72,.8);
   z-index: 100;
   font-weight: bold;
@@ -226,12 +229,12 @@ span.overlay img { padding-right: 6px; }
   width: 70px;
   margin-top: 10px;
   padding: 10px 8px;
-  background-color: #4E4F48;
+  background-color: $base;
   float: right;
   font-weight: bold;
   text-align: center;
 }
-#newsletter a {   color: #C2CF52;  }
+#newsletter a {   color: $accent;  }
 footer {
   clear: both;
   font-size: .9em;
@@ -241,7 +244,7 @@ footer {
 }
 
 footer li { list-style: none;  }
-footer li a { padding: 0 .8em; border-right: 1px solid #4E4F48; color: #4E4F48; }
+footer li a { padding: 0 .8em; border-right: 1px solid $base; color: $base; }
 a.last { border-right: none; }
 
 h2 { font-size: 2em; }
@@ -252,7 +255,7 @@ img { float: left; }
 /* Workout Navigation Overlay Menu */
 #type {
   display: none;
-  background-color: #4E4F48;
+  background-color: $base;
   width: 580px;
   height: 260px;
   position: absolute;
@@ -301,8 +304,8 @@ img { float: left; }
   height: 43px;
   line-height: 43px;
   padding: 0 0 0 50px;
-  background: #4E4F48 url(../images/player.png) no-repeat;
-  border: 5px solid #4E4F48;
+  background: $base url(../images/player.png) no-repeat;
+  border: 5px solid $base;
   border-bottom: none;
   color: white;
   margin-right: 1px;
@@ -321,15 +324,15 @@ img { float: left; }
 #player_nav li.review a { background-position: 0 -215px; }
 
 #player_nav li a:hover {
-  background-color: #C2CF52;
-  border: 5px solid #C2CF52;
+  background-color: $accent;
+  border: 5px solid $accent;
   border-bottom: none;
 }
 #player_nav li a.active {
   background: #ffffff url(../images/player.png) no-repeat;
-  color: #4E4F48;
+  color: $base;
   height: 43px;
-  border: 5px solid #4E4F48;
+  border: 5px solid $base;
   border-bottom: none;
   cursor: default;
 }
@@ -347,7 +350,7 @@ img { float: left; }
 
 #player {
   width: 640px;
-  border: 5px solid #4E4F48;
+  border: 5px solid $base;
   border-top: none;
   min-height: 400px;
   float: left;
@@ -403,7 +406,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
   padding: 10px 15px 25px;
   width: 130px;
   height: 420px;
-  background-color: #4E4F48;
+  background-color: $base;
   color: white;
   float: right;
   -moz-border-radius: 15px;
@@ -439,7 +442,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
   display: block;
   float: left;
   line-height: 50px;
-  color:  #4E4F48;
+  color:  $base;
   font-size: 1.3em;
   margin-left: 1em;
   -moz-transition: all .3s ease-in;
@@ -453,10 +456,5 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
   -o-border-radius: 8px;
   border-radius: 8px;
   behavior: url(PIE.htc);
-  background-color: #C2CF52;
+  background-color: $accent;
 }
-
-/* Colors:
-Background: #4E4F48
-Highlight:  #C2CF52
-*/

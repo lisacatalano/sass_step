@@ -1,8 +1,3 @@
-/*
-Colors:
-Background: #4E4F48
-Highlight:  #C2CF52
-*/
 /* CSS Reset */
 html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, em, img, small, strong, sub, sup, var,
@@ -56,9 +51,10 @@ input, select {
   vertical-align: middle; }
 
 /* END RESET CSS */
+/* VARIABLES */
 /* BASE STYLES */
 body, select, input, textarea {
-  color: #4E4F48; }
+  color: #4e4f48; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -94,7 +90,7 @@ button {
 
 /* videofitness styles */
 body {
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   font-family: "Trebuchet MS", san-serif;
   font-size: 80%; }
 
@@ -111,7 +107,7 @@ body {
 header {
   height: 125px;
   background: transparent url(../images/logo.png) no-repeat 0 18px;
-  border-bottom: 2px solid #C2CF52;
+  border-bottom: 2px solid #c2cf52;
   position: relative;
   margin-bottom: 25px; }
 
@@ -135,7 +131,7 @@ header input {
   position: relative;
   height: 16px;
   width: 150px;
-  border: 2px solid #4E4F48;
+  border: 2px solid #4e4f48;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
   -o-border-radius: 7px;
@@ -162,7 +158,7 @@ header .account {
 header .account a {
   display: block;
   font-size: .9em;
-  color: #4E4F48;
+  color: #4e4f48;
   padding-top: 0px; }
 
 header .account a:hover {
@@ -196,7 +192,7 @@ nav ul li a {
   position: relative;
   width: 112px;
   float: left;
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   margin-right: 5px;
   text-align: center;
   color: white;
@@ -211,7 +207,7 @@ nav ul li a {
   transition: background-color .3s ease-in; }
 
 nav ul li a:hover {
-  background-color: #C2CF52; }
+  background-color: #c2cf52; }
 
 nav ul.account {
   float: none;
@@ -246,7 +242,7 @@ header p {
   bottom: -35px;
   height: 35px;
   width: 185px;
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   background-color: rgba(78, 79, 72, 0.8);
   z-index: 100;
   font-weight: bold;
@@ -276,13 +272,13 @@ span.overlay img {
   width: 70px;
   margin-top: 10px;
   padding: 10px 8px;
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   float: right;
   font-weight: bold;
   text-align: center; }
 
 #newsletter a {
-  color: #C2CF52; }
+  color: #c2cf52; }
 
 footer {
   clear: both;
@@ -296,8 +292,8 @@ footer li {
 
 footer li a {
   padding: 0 .8em;
-  border-right: 1px solid #4E4F48;
-  color: #4E4F48; }
+  border-right: 1px solid #4e4f48;
+  color: #4e4f48; }
 
 a.last {
   border-right: none; }
@@ -314,7 +310,7 @@ img {
 /* Workout Navigation Overlay Menu */
 #type {
   display: none;
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   width: 580px;
   height: 260px;
   position: absolute;
@@ -370,7 +366,7 @@ img {
   line-height: 43px;
   padding: 0 0 0 50px;
   background: #4e4f48 url(../images/player.png) no-repeat;
-  border: 5px solid #4E4F48;
+  border: 5px solid #4e4f48;
   border-bottom: none;
   color: white;
   margin-right: 1px;
@@ -394,15 +390,15 @@ img {
   background-position: 0 -215px; }
 
 #player_nav li a:hover {
-  background-color: #C2CF52;
-  border: 5px solid #C2CF52;
+  background-color: #c2cf52;
+  border: 5px solid #c2cf52;
   border-bottom: none; }
 
 #player_nav li a.active {
   background: white url(../images/player.png) no-repeat;
-  color: #4E4F48;
+  color: #4e4f48;
   height: 43px;
-  border: 5px solid #4E4F48;
+  border: 5px solid #4e4f48;
   border-bottom: none;
   cursor: default; }
 
@@ -425,7 +421,7 @@ img {
 
 #player {
   width: 640px;
-  border: 5px solid #4E4F48;
+  border: 5px solid #4e4f48;
   border-top: none;
   min-height: 400px;
   float: left;
@@ -508,7 +504,7 @@ p.reviewer {
   padding: 10px 15px 25px;
   width: 130px;
   height: 420px;
-  background-color: #4E4F48;
+  background-color: #4e4f48;
   color: white;
   float: right;
   -moz-border-radius: 15px;
@@ -544,7 +540,7 @@ p.reviewer {
   display: block;
   float: left;
   line-height: 50px;
-  color: #4E4F48;
+  color: #4e4f48;
   font-size: 1.3em;
   margin-left: 1em;
   -moz-transition: all .3s ease-in;
@@ -558,9 +554,4 @@ p.reviewer {
   -o-border-radius: 8px;
   border-radius: 8px;
   behavior: url(PIE.htc);
-  background-color: #C2CF52; }
-
-/* Colors:
-Background: #4E4F48
-Highlight:  #C2CF52
-*/
+  background-color: #c2cf52; }
