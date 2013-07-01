@@ -1,0 +1,18 @@
+$base:    #4E4F48;
+$accent:  #C2CF52;
+$basefont: "Trebuchet MS", san-serif; 
+
+button {
+  background-color: $accent; 
+  color: $base;
+  font: 1.1em $basefont bold;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 15px;
+}
+
+.cta {
+  @extend button;
+  width: 250px;
+  text-align: center;
+}

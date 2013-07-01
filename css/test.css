@@ -1,0 +1,11 @@
+button, .cta {
+  background-color: #c2cf52;
+  color: #4e4f48;
+  font: 1.1em "Trebuchet MS", san-serif bold;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 15px; }
+
+.cta {
+  width: 250px;
+  text-align: center; }

@@ -30,6 +30,13 @@ $accent:  #C2CF52;
 $basefont: "Trebuchet MS", san-serif; 
 
 
+%transition {
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
 // BASE STYLES 
 body, select, input, textarea { color:$base; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
@@ -171,10 +178,7 @@ nav {
     -o-border-radius: 7px;
     border-radius: 7px;
     behavior: url(PIE.htc);
-    -moz-transition: background-color .3s ease-in;
-    -webkit-transition: background-color .3s ease-in;
-    -o-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in;
+    @extend %transition;
   }
   ul li a:hover {
     background-color: $accent;
@@ -219,10 +223,7 @@ nav ul li, footer ul li {
     font-weight: bold;
     padding: 10px;
     color: white;
-    -moz-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
+    @extend %transition;
   }
   
   a:hover span.overlay {
@@ -350,10 +351,7 @@ img { float: left; }
       -o-border-radius: 15px 15px 0 0;
       border-radius: 15px 15px 0 0;
       behavior: url(PIE.htc);
-      -moz-transition: all .3s ease-in;
-      -webkit-transition: all .3s ease-in;
-      -o-transition: all .3s ease-in;
-      transition: all .3s ease-in;
+      @extend %transition;
     }
     
     a:hover {
@@ -505,10 +503,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
       color:  $base;
       font-size: 1.3em;
       margin-left: 1em;
-      -moz-transition: all .3s ease-in;
-      -webkit-transition: all .3s ease-in;
-      -o-transition: all .3s ease-in;
-      transition: all .3s ease-in;
+      @extend %transition;
     }
     a:hover {
       -moz-border-radius: 8px;

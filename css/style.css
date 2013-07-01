@@ -47,6 +47,12 @@ hr {
 input, select {
   vertical-align: middle; }
 
+nav ul li a, .new span.overlay, #player_nav li a, #listing li a {
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+
 body, select, input, textarea {
   color: #4e4f48; }
 
@@ -174,11 +180,7 @@ nav {
     -webkit-border-radius: 7px;
     -o-border-radius: 7px;
     border-radius: 7px;
-    behavior: url(PIE.htc);
-    -moz-transition: background-color .3s ease-in;
-    -webkit-transition: background-color .3s ease-in;
-    -o-transition: background-color .3s ease-in;
-    transition: background-color .3s ease-in; }
+    behavior: url(PIE.htc); }
   nav ul li a:hover {
     background-color: #c2cf52; }
   nav ul.account {
@@ -217,11 +219,7 @@ nav ul li, footer ul li {
     z-index: 100;
     font-weight: bold;
     padding: 10px;
-    color: white;
-    -moz-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in; }
+    color: white; }
   .new a:hover span.overlay {
     opacity: 1;
     bottom: 0; }
@@ -334,11 +332,7 @@ img {
       -webkit-border-radius: 15px 15px 0 0;
       -o-border-radius: 15px 15px 0 0;
       border-radius: 15px 15px 0 0;
-      behavior: url(PIE.htc);
-      -moz-transition: all .3s ease-in;
-      -webkit-transition: all .3s ease-in;
-      -o-transition: all .3s ease-in;
-      transition: all .3s ease-in; }
+      behavior: url(PIE.htc); }
     #player_nav li a:hover {
       background-color: #c2cf52;
       border: 5px solid #c2cf52;
@@ -479,11 +473,7 @@ p.reviewer {
     line-height: 50px;
     color: #4e4f48;
     font-size: 1.3em;
-    margin-left: 1em;
-    -moz-transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in; }
+    margin-left: 1em; }
   #listing li a:hover {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
