@@ -119,9 +119,6 @@ header {
     height: 16px;
     width: 150px;
     border: 2px solid #4e4f48;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
     border-radius: 7px;
     behavior: url(PIE.htc); }
   header input[type="text"] {
@@ -176,9 +173,6 @@ nav {
     margin-right: 5px;
     text-align: center;
     color: white;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
     border-radius: 7px;
     behavior: url(PIE.htc); }
   nav ul li a:hover {
@@ -282,9 +276,6 @@ img {
   z-index: 200;
   padding: 10px 0px 10px 10px;
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc); }
   #type li {
@@ -443,9 +434,6 @@ p.reviewer {
   background-color: #4e4f48;
   color: white;
   float: right;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
   border-radius: 15px;
   behavior: url(PIE.htc); }
   #sidebar img {
@@ -456,9 +444,6 @@ p.reviewer {
 
 #listing ul {
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
   border-radius: 10px;
   behavior: url(PIE.htc); }
 #listing img {
@@ -475,9 +460,6 @@ p.reviewer {
     font-size: 1.3em;
     margin-left: 1em; }
   #listing li a:hover {
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -o-border-radius: 8px;
     border-radius: 8px;
     behavior: url(PIE.htc);
     background-color: #c2cf52; }

@@ -37,6 +37,12 @@ $basefont: "Trebuchet MS", san-serif;
   transition: all .3s ease-in;
 }
 
+@mixin rounded($radius: 7px) {
+  border-radius: $radius;
+  behavior: url(PIE.htc);
+}
+
+
 // BASE STYLES 
 body, select, input, textarea { color:$base; }
 h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
@@ -105,11 +111,7 @@ header {
     height: 16px;
     width: 150px;
     border: 2px solid $base;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
-    behavior: url(PIE.htc);
+    @include rounded;
   }
   input[type="text"] {
     padding: 5px;
@@ -173,11 +175,7 @@ nav {
     margin-right: 5px;
     text-align: center;
     color: white;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
-    behavior: url(PIE.htc);
+    @include rounded;
     @extend %transition;
   }
   ul li a:hover {
@@ -292,11 +290,7 @@ img { float: left; }
   z-index: 200;
   padding: 10px 0px 10px 10px;
   line-height: 50px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  behavior: url(PIE.htc);
+  @include rounded(10px);  
   
   li { 
     float: left;  
@@ -464,11 +458,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
   background-color: $base;
   color: white;
   float: right;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  behavior: url(PIE.htc);
+  @include rounded(15px);
   
   img {
     margin-left: 15px;
@@ -483,11 +473,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
 #listing { 
   ul {
     line-height: 50px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    behavior: url(PIE.htc);
+    @include rounded(10px);
   }
   img { padding-right: 8px; }
   
@@ -506,11 +492,7 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
       @extend %transition;
     }
     a:hover {
-      -moz-border-radius: 8px;
-      -webkit-border-radius: 8px;
-      -o-border-radius: 8px;
-      border-radius: 8px;
-      behavior: url(PIE.htc);
+      @include rounded(8px);
       background-color: $accent;
     }
   }

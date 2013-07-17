@@ -2,6 +2,10 @@ $base:    #4E4F48;
 $accent:  #C2CF52;
 $basefont: "Trebuchet MS", san-serif; 
 
+body {
+  font-family: $basefont; 
+}
+
 button {
   background-color: $accent; 
   color: $base;
@@ -15,4 +19,24 @@ button {
   @extend button;
   width: 250px;
   text-align: center;
+}
+
+@mixin box($width: 100px, $height: 100px, $padding: 10px) {
+  width: $width;
+  height: $height;
+  margin: 10px;
+  padding: $padding;
+  background-color: $accent;
+}
+
+.box1 {
+  @include box(50px, 200px);
+}
+
+.box2 {
+  @include box(200px);
+}
+
+.box3 {
+  @include box(100px, 100px, 30px);
 }
