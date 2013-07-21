@@ -140,17 +140,17 @@ header {
       font-size: .9em;
       color: #4e4f48;
       padding-top: 0px; }
-    header .account a:hover {
-      text-decoration: underline; }
-    header .account a[href^="cart"] {
-      position: absolute;
-      right: -100px;
-      top: 0;
-      height: 50px;
-      width: 86px;
-      margin-top: 18px; }
-    header .account a[href^="cart"] img {
-      margin: -48px 25px 0 0; }
+      header .account a:hover {
+        text-decoration: underline; }
+      header .account a[href^="cart"] {
+        position: absolute;
+        right: -100px;
+        top: 0;
+        height: 50px;
+        width: 86px;
+        line-height: 30px; }
+      header .account a[href^="cart"] img {
+        margin-right: 8px; }
 
 .branding #logo {
   display: block;
@@ -175,8 +175,8 @@ nav {
     color: white;
     border-radius: 7px;
     behavior: url(PIE.htc); }
-  nav ul li a:hover {
-    background-color: #c2cf52; }
+    nav ul li a:hover {
+      background-color: #c2cf52; }
   nav ul.account {
     float: none;
     margin-top: 0;
@@ -324,17 +324,17 @@ img {
       -o-border-radius: 15px 15px 0 0;
       border-radius: 15px 15px 0 0;
       behavior: url(PIE.htc); }
-    #player_nav li a:hover {
-      background-color: #c2cf52;
-      border: 5px solid #c2cf52;
-      border-bottom: none; }
-    #player_nav li a.active {
-      background: white url(../images/player.png) no-repeat;
-      color: #4e4f48;
-      height: 43px;
-      border: 5px solid #4e4f48;
-      border-bottom: none;
-      cursor: default; }
+      #player_nav li a:hover {
+        background-color: #c2cf52;
+        border: 5px solid #c2cf52;
+        border-bottom: none; }
+      #player_nav li a.active {
+        background: white url(../images/player.png) no-repeat;
+        color: #4e4f48;
+        height: 43px;
+        border: 5px solid #4e4f48;
+        border-bottom: none;
+        cursor: default; }
     #player_nav li li a[href^="#reviews"] {
       margin-right: 0; }
   #player_nav li.detail a {
@@ -459,7 +459,7 @@ p.reviewer {
     color: #4e4f48;
     font-size: 1.3em;
     margin-left: 1em; }
-  #listing li a:hover {
-    border-radius: 8px;
-    behavior: url(PIE.htc);
-    background-color: #c2cf52; }
+    #listing li a:hover {
+      border-radius: 8px;
+      behavior: url(PIE.htc);
+      background-color: #c2cf52; }

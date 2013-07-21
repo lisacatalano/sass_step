@@ -136,18 +136,18 @@ header {
       font-size: .9em;
       color: $base;
       padding-top: 0px;
-    }
-    a:hover { text-decoration: underline; }
-    a[href^="cart"] {
-      position: absolute;
-      right: -100px;
-      top: 0;
-      height: 50px;
-      width: 86px;
-      margin-top: 18px;
-    }
-    a[href^="cart"] img{
-      margin: -48px 25px 0 0;
+      &:hover { text-decoration: underline; }
+      &[href^="cart"] {
+        position: absolute;
+        right: -100px;
+        top: 0;
+        height: 50px;
+        width: 86px;
+        line-height: 30px;
+      }
+      &[href^="cart"] img{
+        margin-right: 8px;
+      }
     }
   }
 }
@@ -177,9 +177,9 @@ nav {
     color: white;
     @include rounded;
     @extend %transition;
-  }
-  ul li a:hover {
-    background-color: $accent;
+    &:hover {
+      background-color: $accent;
+    }
   }
   
   ul.account {
@@ -346,21 +346,22 @@ img { float: left; }
       border-radius: 15px 15px 0 0;
       behavior: url(PIE.htc);
       @extend %transition;
+      
+      &:hover {
+        background-color: $accent;
+        border: 5px solid $accent;
+        border-bottom: none;
+      }
+      &.active {
+        background: #ffffff url(../images/player.png) no-repeat;
+        color: $base;
+        height: 43px;
+        border: 5px solid $base;
+        border-bottom: none;
+        cursor: default;
+      }
     }
     
-    a:hover {
-      background-color: $accent;
-      border: 5px solid $accent;
-      border-bottom: none;
-    }
-    a.active {
-      background: #ffffff url(../images/player.png) no-repeat;
-      color: $base;
-      height: 43px;
-      border: 5px solid $base;
-      border-bottom: none;
-      cursor: default;
-    }
   
     li a[href^="#reviews"] { margin-right: 0; }
   }
@@ -490,10 +491,11 @@ p.reviewer { clear: both; font-size: .95em; margin: 15px 4px; }
       font-size: 1.3em;
       margin-left: 1em;
       @extend %transition;
-    }
-    a:hover {
-      @include rounded(8px);
-      background-color: $accent;
+      
+      &:hover {
+        @include rounded(8px);
+        background-color: $accent;
+      }
     }
   }
 }
