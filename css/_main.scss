@@ -1,0 +1,129 @@
+/* videofitness styles */
+body, select, input, textarea { color:$base; }
+body {
+  background-color: $base;
+  font-family: $basefont;
+  font-size: 80%;
+}
+#container {
+  width: 820px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0 70px;
+  -moz-box-shadow: -3px 0px 5px #20211D;
+  -webkit-box-shadow: -3px 0px 5px #20211D;
+  box-shadow: -3px 0px 5px #000;
+  behavior: url(PIE.htc);
+}
+
+// HEADER 
+header {
+  height: 125px;
+  background: transparent url(../images/logo.png) no-repeat 0 18px;
+  border-bottom: 2px solid $accent;
+  position: relative;
+  margin-bottom: 25px;
+  
+  h1 {
+    text-indent: -9999px;
+    height: 44px;
+  }
+  p {
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: right;
+  }
+  form {
+    float: right;
+    margin-top: 45px;
+  }
+
+  input {
+    position: relative;
+    height: 16px;
+    width: 150px;
+    border: 2px solid $base;
+    @include rounded;
+  }
+  input[type="text"] {
+    padding: 5px;
+    background: url(../images/search.png) no-repeat 5px 5px;
+    padding-left: 30px;
+    font: bold italic 1.2em Georgia, "Times New Roman", Times, serif;
+    color: #ddd;
+  }
+  input[type="submit"] {
+    height: 30px;
+    width: 40px;
+    font-weight: bold;
+  }
+  
+  .account {
+    position: absolute;
+    top: 20px;
+    right: 145px;
+    
+    a {
+      display: block;
+      font-size: .9em;
+      color: $base;
+      padding-top: 0px;
+      &:hover { text-decoration: underline; }
+      &[href^="cart"] {
+        position: absolute;
+        right: -100px;
+        top: 0;
+        height: 50px;
+        width: 86px;
+        line-height: 30px;
+      }
+      &[href^="cart"] img{
+        margin-right: 8px;
+      }
+    }
+  }
+}
+.branding #logo {
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 125px;
+  left: 0px;
+  overflow: hidden;
+}
+
+// NAVIGATION 
+nav {
+  height: 30px;
+  margin: 45px 0 0;
+  line-height: 30px;
+  font-weight: bold;
+  
+  ul li a {
+    position: relative;
+    width: 112px;
+    float: left;
+    background-color: $base;
+    margin-right: 5px;
+    text-align: center;
+    color: white;
+    @include rounded;
+    @extend %transition;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+  
+  ul.account {
+    float: none;
+    margin-top: 0;
+    border: 1px solid #3FF;
+  }
+}
+
+nav ul li, footer ul li {
+  float: left;
+}
+
+#main { hidden: overflow; overflow: auto; }
+#category #main { height: 468px; }

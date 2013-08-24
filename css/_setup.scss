@@ -1,0 +1,19 @@
+// WebSite SetUp - Variables, Mixins and Extend definitions
+
+// VARIABLES 
+$base:    #4E4F48;
+$accent:  #C2CF52;
+$basefont: "Trebuchet MS", san-serif; 
+
+
+%transition {
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+@mixin rounded($radius: 7px) {
+  border-radius: $radius;
+  behavior: url(PIE.htc);
+}

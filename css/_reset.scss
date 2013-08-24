@@ -1,0 +1,46 @@
+// CSS Reset 
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, em, img, small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+article, aside, figure, footer, header, hgroup, nav, section { display:block; } // Remove if not using HTML5 
+nav ul { list-style:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration: none;  }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+// tables still need cellspacing="0" in the markup 
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+// BASE STYLES 
+h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+html { -webkit-font-smoothing: antialiased; }
+
+// Accessible focus treatment 
+a:hover, a:active { outline: none; }
+
+// hand cursor on clickable input elements 
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+//  j.mp/webkit-tap-highlight-color 
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+// always force a scrollbar in non-IE 
+html { overflow-y: scroll; }
+
+// make buttons play nice in IE 
+button {  width: auto; overflow: visible; }
+
+// bicubic resizing for non-native sized IMG 
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
